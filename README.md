@@ -7,7 +7,8 @@ The code works by getting your name and surname and the department you work in a
 e.g. @gmail.com then creates a email. 
 
 The password is created by the user making there own password which will have validation checks like length check and if they have a
-number in there password. As a automatic feature the code will put a capital letter in the first character in there password.
+number in there password. As a automatic feature the code will put a capital letter in the first character in there password. 
+Furthermore there will a four randomly generated letters and there first letter of there department will be joined at the end.  
 
 You're also able to change your password, this will require you too input your old password and if your correctly put your old
 password then you'll be prompted to change the passowrd, but if you forgot your passowrd then you'll have to keep guessing.
