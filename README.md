@@ -1,6 +1,9 @@
 # Email-Administration-Application
 This program makes a new email and password for a new employer joining a comapny. 
 
+![image](https://user-images.githubusercontent.com/71788109/111483140-6eabdd80-872c-11eb-97ad-ec594b0ce977.png)
+
+
 Why is this usefull? Well usually when a new employee joins a company he/she will get a brand new email under the company.
 
 The code works by getting your name and surname and the department you work in and asks which email ending you would like
