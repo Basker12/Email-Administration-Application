@@ -95,4 +95,25 @@ if userInput == "1":
     print("This is your new email: " + finalUserEmail)
     print("This is your password: " + finalUserPassword)
 
+elif userInput == "2":
 
+    randomNum = random.choice(string.ascii_letters)
+    randomNum2 = random.choice(string.ascii_letters)
+    randomNum3 = random.choice(string.ascii_letters)
+    randomNum4 = random.choice(string.ascii_letters)
+
+    randomNums = randomNum + randomNum2 + randomNum3 + randomNum4
+
+    print("Here you can change your password")
+    print("")
+    lastPass = input("Please write your last password: ")
+    if lastPass == lastPass:
+        newPass = input("Write your new password: ")
+    elif lastPass != "password":
+        print("Write your password is incorrect")
+
+    if newPass.islower() or newPass.upper() or newPass == newPass:
+        fNewPass = newPass.title()
+
+    finalNewPass = fNewPass + randomNums
+    print("This is your new password: " + fNewPass)
