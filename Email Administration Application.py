@@ -69,30 +69,30 @@ if userInput == "1":
     print("")
 
 
-#Password with validation checks
-randomNum = random.choice(string.ascii_letters)
-randomNum2 = random.choice(string.ascii_letters)
-randomNum3 = random.choice(string.ascii_letters)
-randomNum4 = random.choice(string.ascii_letters)
+    #Password with validation checks
+    randomNum = random.choice(string.ascii_letters)
+    randomNum2 = random.choice(string.ascii_letters)
+    randomNum3 = random.choice(string.ascii_letters)
+    randomNum4 = random.choice(string.ascii_letters)
 
-randomNums = randomNum + randomNum2 + randomNum3 + randomNum4
+    randomNums = randomNum + randomNum2 + randomNum3 + randomNum4
 
-userLength = False
-while not userLength:
-    userPassword = input("Write a pass: ")
-    if len(userPassword) >= 10:
-        userLength = True
-        print("That's a good password: " + userPassword)
-    else:
-        print("Your password isn't 10 characters long, please try again.")
+    userLength = False
+    while not userLength:
+        userPassword = input("Write a pass: ")
+        if len(userPassword) >= 10:
+            userLength = True
+            print("That's a good password: " + userPassword)
+        else:
+            print("Your password isn't 10 characters long, please try again.")
 
-if userPassword.isupper() or userPassword.islower() or userPassword == userPassword:
-    fUserPassword = userPassword.title()
+    if userPassword.isupper() or userPassword.islower() or userPassword == userPassword:
+        fUserPassword = userPassword.title()
 
-finalUserPassword = fUserPassword + randomNums
-print("This is your final password: " + finalUserPassword)
-print("")
-print(finalUserEmail)
-print(finalUserPassword)
+    finalUserPassword = fUserPassword + randomNums
+    print("This is your final password: " + finalUserPassword)
+    print("")
+    print("This is your new email: " + finalUserEmail)
+    print("This is your password: " + finalUserPassword)
 
 
