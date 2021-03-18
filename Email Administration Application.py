@@ -98,7 +98,7 @@ def email():
         print("This is your password: " + finalUserPassword)
 
 #global password
-#password = ""
+#password = 
 
 def changePassword():
     if userInput == "2":
@@ -125,5 +125,10 @@ def changePassword():
         finalNewPass = fNewPass + randomNums
         print("This is your new password: " + finalNewPass)
 
+def showPass():
+    if userInput == "3":
+        pass
+
 email()
 changePassword()
+showPass()
