@@ -20,7 +20,7 @@ This code will be written in Python and Java, but due to my inexperience with ja
 
 | Written Language | Date Of Completion |
 | --- | --- |
-|Python | N/A |
+|Python | 19/03/2021 |
 | Java | N/A |
 
 --Basker12
