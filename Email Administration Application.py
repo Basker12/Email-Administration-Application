@@ -2,13 +2,18 @@ import random
 import string
 import sys
 
+global finalUserPassword
+finalUserPassword = None
+global finalUserEmail
+finalUserEmail = None
+
 Departments = {
     #Departments and there short names:
     "Production": "PD",
     "Research and development": "RDaD",
     "Purchasing": "PCD",
     "Marketing and selling": "MSaD",
-    "Human Rescource Management": "HRMD",
+    "Human Resource Management": "HRMD",
     "Accounting and Fiance": "AFaD",
 
 }
@@ -98,7 +103,7 @@ def email():
         print("This is your password: " + finalUserPassword)
 
 #global password
-#password = 
+#password =
 
 def changePassword():
     if userInput == "2":
@@ -113,9 +118,9 @@ def changePassword():
         print("Here you can change your password")
         print("")
         lastPass = input("Please write your last password: ")
-        if lastPass == password:
+        if lastPass == finalUserPassword:
             newPass = input("Write your new password: ")
-        elif lastPass != password:
+        elif lastPass != finalUserPassword:
             print("Your password is incorrect")
             sys.exit()
 
@@ -127,7 +132,9 @@ def changePassword():
 
 def showPass():
     if userInput == "3":
-        pass
+        print("This is your email: " + finalUserEmail)
+        print("This iss your password" + finalUserPassword)
+        exit()
 
 email()
 changePassword()
