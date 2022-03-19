@@ -7,6 +7,8 @@ finalUserPassword = None
 global finalUserEmail
 finalUserEmail = None
 
+# Just a fun project to remake this code using my new knowledge
+
 Departments = {
     #Departments and there short names:
     "Production": "PD",
@@ -40,6 +42,8 @@ def email():
         userDepartment = input("Write your department in the company: ")
         if userDepartment.islower() or userDepartment.upper() or userDepartment == userDepartment:
             newUserDepartment = userDepartment.title()
+            if newUserDepartment != Departments:
+                email()
             print("")
 
         userEmail = newUserName + newUserSurname + newUserDepartment
